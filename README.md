@@ -13,14 +13,39 @@ Dalam dunia dimana setiap harinya orang-orang penduduk bumi ini menghargai waktu
 ## SOLUSI
 Dalam upaya mengeliminasi permasalahan yang terjadi saat seseorang parkir, kami dari kelompok 23 membuat alat bernama Car Parking Sensor. Car Parking Sensor ini memakai sensor HC SR04 yang dimana terhubung kepada dua buah Arduino Uno yang saling terhubungdengan koneksi I2C berupa Master dan Slave. Sensor HC-SR04 akan terhubung kepada Arduino Uno yang Master dimana sensor ini berguna untuk mengukur jarak mobil ke dinding atau hal lainnya. Jika jarak mobil sudah semakin dekat dengan dinding maka yang akan terjadi adalah buzzer yang telah terhubung kepada Arduino Uno Slave akan menghasilkan suara yang akan memperingati pengemudi mobil seberapa jauh jarak mereka dengan dinding.
 
-## KOMPONEN DAN FITUR-FITUR
+## KOMPONEN YANG DIPAKAI
 
 ### ARDUINO UNO
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/ARDUINO%20UNO.jpg)
 
 ### HC-SR04
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/HC-SR04.jpg)
 
 ### LED
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/LED.jpg)
 
 ### BUZZER
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/BUZZER.jpg)
 
 ### RESISTOR
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/RESISTOR.jpeg)
+
+## HASIL TEST
+Dari hasil test yang telah kelompok kami jalankan, alat yang telah kami buat telah berjalan sesuai dengan visi yang kami inginkan. Saat HC SR04 mendeteksi bahwa mobil masih berjarak > daripada 30 cm maka yang akan terjadi adalah kedua LED akan menyala dan salah satu dari buzzer akan bersuara. Lalu kondisi kedua adalah jika mobil sudah berjarak < 30 cm, dimana yang akan terjadi adalah kedua buzzer akan bersuara dan LED yang akan menyala hanya satu saja, ini akan mengindikasikan bahwa mobil sudah mulai mendekat dengan dinding.
+
+Jarak dari kapan kondisi akan berubah dapat di atur di kode:
+
+ ```bash
+l80:  CPI   R28, 30         ;compare R28 with 30
+      BRMI  dsp             ;jump when R28 < 30
+      INC   R27             ;increment counter2 by 1
+      SUBI  R28, 30         ;R28 = R28 - 30
+      RJMP  l80
+```
+
+### KONDISI SAAT MOBIL BERJARAK > 30 CM DARI DINDING
+![]()
+
+### KONDISI SAAT MOBIL BERJARAK < 30 CM DARI DINDING
+![]()
+
