@@ -8,6 +8,12 @@
 - [Nakita Rahma Dinanti](https://github.com/nakita1203) (2206059401)
 
 
+## TABLE OF CONTENTS
+- [INTRODUCTION](#introduction)
+- [HARDWARE DESIGN AND IMPLEMENTATION](#hardware-design-and-implementation)
+- [TEST RESULTS AND PERFORMANCE EVALUATION](#test-results-and-performance-evaluation)
+- [SOFTWARE IMPLEMENTATION](#software-implementation)
+- [CONCLUSION AND FUTURE WORK](#conclusion-and-future-work)
 
 
 ## INTRODUCTION
@@ -25,26 +31,32 @@ Dalam upaya mengeliminasi permasalahan yang terjadi saat seseorang parkir, kami 
 - **Meredupkan Lampu**: Ketika mobil sudah hampir mendekati sebuah objek/dinding, lampu akan meredup untuk menjaga visibilitas pengemudi ke belakang.
 
 ## HARDWARE DESIGN AND IMPLEMENTATION
+Alat Car Parking Sensor menggunakan beberapa komponen utama yaitu Arduino Uno, sensor ultrasonik HC-SR04, LED, buzzer, dan resistor. Arduino Uno berfungsi sebagai pengendali utama yang mengatur seluruh sistem. Sensor HC-SR04 digunakan untuk mengukur jarak antara mobil dan objek di sekitarnya, memastikan deteksi yang akurat. LED berperan sebagai indikator visual yang menyala saat mobil mendekati objek, memberikan tanda kepada pengemudi. Buzzer digunakan sebagai indikator suara yang berbunyi untuk memperingatkan pengemudi saat jarak mobil dengan objek semakin dekat. Resistor digunakan untuk membatasi arus listrik dalam rangkaian, melindungi komponen lain dari kerusakan. Kombinasi komponen ini menciptakan sistem yang efektif dalam membantu pengemudi memarkir mobil dengan aman dan akurat.
+
 
 ### COMPONENTS
 
-### ARDUINO UNO
+#### ARDUINO UNO
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/ARDUINO%20UNO.jpg)
 
-### HC-SR04
+#### HC-SR04
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/HC-SR04.jpg)
 
-### LED
+#### LED
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/LED.jpg)
 
-### BUZZER
+#### BUZZER
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/BUZZER.jpg)
 
-### RESISTOR
+#### RESISTOR
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/RESISTOR.jpeg)
+
+### HARDWARE SCHEMATICS
 
 
 ## SOFTWARE IMPLEMENTATION
+Proses integrasi melibatkan penghubungan antara Arduino sebagai kontrol kendali dengan perangkat keras seperti sensor, arduino, dan buzzer sebagai input dan output. Kode yang dibuat diunggah ke Arduino sehingga microcontroller ATMega 328 dapat memproses input yang diberikan dan mengubahnya menjadi output yang sesuai dengan input tersebut. Dengan melakukan integrasi, terciptalah sistem yang dapat berjalan untuk mengaktifkan satu atau dua buzzer dan LED berdasarkan hasil pembacaan dari sensor jarak HC-SR04. Hal ini dapat mempermudah pengemudi mobil dalam mengetahui seberapa dekat mobil dengan objek di sekitarnya melalui bunyi buzzer dan LED yang menyala, sehingga meningkatkan keamanan dan kenyamanan dalam parkir.
+
 ### SOFTWARE USED
 
 - [Proteus](https://www.labcenter.com/)
@@ -52,6 +64,7 @@ Dalam upaya mengeliminasi permasalahan yang terjadi saat seseorang parkir, kami 
 - [VS Code](https://code.visualstudio.com/)
 
 ### FLOWCHART
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/FLOWCHART.png)
 
 
 ## TEST RESULTS AND PERFORMANCE EVALUATION
@@ -88,3 +101,7 @@ Melalui pengujian yang telah dilakukan, alat ini terbukti efektif dan dapat dian
 
 
 ### FUTURE WORK
+Untuk kedepannya, kita dapat memperbagus alat Car Parking Sensor ini dengan meningkatkan akurasi dan konsistensi sensor HC-SR04 yang digunakan. Salah satu cara untuk meningkatkan akurasi adalah dengan menggunakan sensor jarak yang lebih canggih, seperti sensor LIDAR atau kamera berbasis visi komputer, yang dapat memberikan pengukuran jarak dengan lebih presisi dan kehandalan. Selain itu, menambahkan lebih banyak sensor di berbagai sudut mobil dapat memberikan cakupan yang lebih luas dan mendetail mengenai posisi kendaraan terhadap objek di sekitarnya, sehingga pengemudi mendapatkan informasi yang lebih komprehensif dan akurat saat memarkir mobil.
+
+Selain itu, integrasi dengan sistem kendaraan yang lebih canggih, seperti sistem infotainment dalam mobil, dapat meningkatkan pengalaman pengguna. Alat ini bisa dihubungkan ke layar dashboard mobil untuk menampilkan visualisasi jarak secara real-time, memberikan notifikasi melalui tampilan visual, suara, dan getaran. Dengan menggabungkan data dari berbagai sensor dan memprosesnya menggunakan algoritma yang lebih pintar, alat ini juga bisa memberikan rekomendasi parkir optimal atau bahkan memungkinkan fitur parkir otomatis. Penambahan fitur-fitur ini akan membuat alat Car Parking Sensor lebih efisien, intuitif, dan bermanfaat bagi pengemudi, sehingga meningkatkan keselamatan dan kenyamanan saat memarkir kendaraan.
+
