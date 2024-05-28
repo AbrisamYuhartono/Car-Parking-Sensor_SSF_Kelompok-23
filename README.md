@@ -52,6 +52,7 @@ Alat Car Parking Sensor menggunakan beberapa komponen utama yaitu Arduino Uno, s
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/RESISTOR.jpeg)
 
 ### HARDWARE SCHEMATICS
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/MOBIL%20BERJARAK%20LEBIH%20DARI%2020%20CM%20DARI%20DINDING.png)
 
 
 ## SOFTWARE IMPLEMENTATION
