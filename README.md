@@ -40,7 +40,7 @@ Dalam upaya mengeliminasi permasalahan yang terjadi saat seseorang parkir, kami 
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/RESISTOR.jpeg)
 
 ## HASIL TEST
-Dari hasil test yang telah kelompok kami jalankan, alat yang telah kami buat telah berjalan sesuai dengan visi yang kami inginkan. Saat HC SR04 mendeteksi bahwa mobil masih berjarak > daripada 10 cm maka yang akan terjadi adalah kedua LED akan menyala dan salah satu dari buzzer akan bersuara. Lalu kondisi kedua adalah jika mobil sudah berjarak < 10 cm, dimana yang akan terjadi adalah kedua buzzer akan bersuara dan LED yang akan menyala hanya satu saja, ini akan mengindikasikan bahwa mobil sudah mulai mendekat dengan dinding.
+Dari hasil test yang telah kelompok kami jalankan, alat yang telah kami buat telah berjalan sesuai dengan visi yang kami inginkan. Saat HC SR04 mendeteksi bahwa mobil masih berjarak > 10 cm maka yang akan terjadi adalah kedua LED akan menyala dan salah satu dari buzzer akan bersuara. Lalu kondisi kedua adalah jika mobil sudah berjarak < 10 cm, dimana yang akan terjadi adalah kedua buzzer akan bersuara dan LED yang akan menyala hanya satu saja, ini akan mengindikasikan bahwa mobil sudah mulai mendekat dengan dinding.
 
 Pengecekan jarak untuk kemudian berpindah ke state tertentu:
 
