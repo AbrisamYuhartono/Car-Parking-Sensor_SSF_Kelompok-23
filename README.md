@@ -30,6 +30,7 @@ Dalam upaya mengeliminasi permasalahan yang terjadi saat seseorang parkir, kami 
 - **Buzzer**: Menyalakan buzzer untuk mengingatkan pengemudi bahwa objek sudah berada pada jarak yang dekat dengan mobil dan intensitas buzzer meningkat ketika jarak mobil dengan objek di belakang semakin dekat.
 - **Meredupkan Lampu**: Ketika mobil sudah hampir mendekati sebuah objek/dinding, lampu akan meredup untuk menjaga visibilitas pengemudi ke belakang.
 
+
 ## HARDWARE DESIGN AND IMPLEMENTATION
 Alat Car Parking Sensor menggunakan beberapa komponen utama yaitu Arduino Uno, sensor ultrasonik HC-SR04, LED, buzzer, dan resistor. Arduino Uno berfungsi sebagai pengendali utama yang mengatur seluruh sistem. Sensor HC-SR04 digunakan untuk mengukur jarak antara mobil dan objek di sekitarnya, memastikan deteksi yang akurat. LED berperan sebagai indikator visual yang menyala saat mobil mendekati objek, memberikan tanda kepada pengemudi. Buzzer digunakan sebagai indikator suara yang berbunyi untuk memperingatkan pengemudi saat jarak mobil dengan objek semakin dekat. Resistor digunakan untuk membatasi arus listrik dalam rangkaian, melindungi komponen lain dari kerusakan. Kombinasi komponen ini menciptakan sistem yang efektif dalam membantu pengemudi memarkir mobil dengan aman dan akurat.
 
