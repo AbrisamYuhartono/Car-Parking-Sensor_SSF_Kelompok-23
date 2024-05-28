@@ -44,7 +44,16 @@ l80:  CPI   R28, 30         ;compare R28 with 30
 ```
 
 
+### KONDISI SAAT MOBIL BERJARAK > 30 CM DARI DINDING
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/MOBIL%20BERJARAK%20LEBIH%20DARI%2030%20CM%20DARI%20DINDING.png)
 
+Saat sensor mendeteksi bahwa mobil masih berjarak > 30 cm dari dinding maka yang akan dilakukan adalah salah satu buzzer akan bersuara dan kedua LED akan menyala. Seperti yang terlihat pada simulasi Proteus berikut.
+
+
+### KONDISI SAAT MOBIL BERJARAK < 30 CM DARI DINDING
+![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/MOBIL%20BERJARAK%20KURANG%20DARI%2030%20CM%20DARI%20DINDING.png)
+
+Saat sensor mendeteksi bahwa mobil sudah berjarak < 30 cm dari dinding maka yang akan dilakukan adalah kedua buzzer akan bersuara dan salah satu dari LED akan menyala. Seperti yang terlihat pada simulasi Proteus berikut.
 
 
 
