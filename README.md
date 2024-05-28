@@ -56,4 +56,10 @@ Saat sensor mendeteksi bahwa mobil masih berjarak > 30 cm dari dinding maka yang
 Saat sensor mendeteksi bahwa mobil sudah berjarak < 30 cm dari dinding maka yang akan dilakukan adalah kedua buzzer akan bersuara dan salah satu dari LED akan menyala. Seperti yang terlihat pada simulasi Proteus berikut.
 
 
+## EVALUASI
+Evaluasi terhadap proyek ini adalah alat sudah dapat berfungsi sesuai dengan visi dari kelompok kami dan sudah memenuhi misi dari dibuatnya alat ini yaitu untuk mengeliminasi permasalahan yang sering terjadi saat seseorang sedang memarkir mobil mereka. Untuk kedepannya hal yang dapat dilakukan adalah untuk memperbaik sensor yang dipakai untuk selalu menghasilkan hasil yang konsisten demi memperbaik alat ini kalau akhirnya dapat dipakai untuk banyak orang dan parkiran pada bangunan.
 
+## KESIMPULAN
+Proyek Car Parking Sensor yang dirancang oleh kelompok 23 berhasil mencapai tujuannya dalam membantu pengemudi mobil memarkir dengan lebih aman dan akurat. Dengan memanfaatkan sensor HC-SR04 yang terhubung ke dua buah Arduino Uno melalui koneksi I2C, alat ini dapat mendeteksi jarak antara mobil dan dinding atau halangan lainnya. Jika jarak yang terdeteksi lebih dari 30 cm, buzzer akan bersuara dan kedua LED akan menyala, memberikan peringatan kepada pengemudi bahwa mereka masih memiliki cukup ruang untuk bergerak. Namun, saat jarak berkurang menjadi kurang dari 30 cm, kedua buzzer akan aktif dan hanya satu LED yang menyala, memberikan sinyal bahwa mobil sudah sangat dekat dengan dinding, sehingga pengemudi harus berhati-hati.
+
+Melalui pengujian yang telah dilakukan, alat ini terbukti efektif dan dapat diandalkan dalam berbagai kondisi parkir. Keberhasilan alat ini tidak hanya mengurangi risiko kerusakan mobil akibat benturan, tetapi juga mengurangi stres pengemudi saat memarkir. Meski demikian, evaluasi lebih lanjut diperlukan untuk memastikan konsistensi hasil sensor agar alat ini bisa diterapkan lebih luas. Peningkatan akurasi dan kestabilan sensor akan meningkatkan kepercayaan pengguna dan memungkinkan alat ini digunakan di berbagai tempat parkir umum, membantu lebih banyak pengemudi dalam parkir mobil dengan aman.
