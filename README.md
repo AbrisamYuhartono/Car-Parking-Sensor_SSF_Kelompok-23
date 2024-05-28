@@ -42,24 +42,44 @@ Dalam upaya mengeliminasi permasalahan yang terjadi saat seseorang parkir, kami 
 ## HASIL TEST
 Dari hasil test yang telah kelompok kami jalankan, alat yang telah kami buat telah berjalan sesuai dengan visi yang kami inginkan. Saat HC SR04 mendeteksi bahwa mobil masih berjarak > daripada 30 cm maka yang akan terjadi adalah kedua LED akan menyala dan salah satu dari buzzer akan bersuara. Lalu kondisi kedua adalah jika mobil sudah berjarak < 30 cm, dimana yang akan terjadi adalah kedua buzzer akan bersuara dan LED yang akan menyala hanya satu saja, ini akan mengindikasikan bahwa mobil sudah mulai mendekat dengan dinding.
 
-Jarak dari kapan kondisi akan berubah dapat di atur di kode:
+Pengecekan jarak untuk kemudian berpindah ke state tertentu:
 
  ```bash
-l80:  CPI   R28, 30         ;compare R28 with 30
-      BRMI  dsp             ;jump when R28 < 30
-      INC   R27             ;increment counter2 by 1
-      SUBI  R28, 30         ;R28 = R28 - 30
-      RJMP  l80
+CPI R18, 10
+BRCS STATE0
+RJMP STATE1
+```
+
+State untuk jarak benda yang terletak dengan jarak kurang dari 10 cm:
+
+ ```bash
+STATE0:
+  SBI PORTD, 5 ; menyalakan led pertama
+  CBI PORTD, 4 ; mematikan led kedua
+  SBI PORTD, 3 ; menyalakan buzzer pertama
+  SBI PORTD, 2 ; menyalakan buzzer kedua
+  RJMP agn
+```
+
+State untuk jarak benda yang terletak dengan jarak lebih dari 10 cm:
+
+ ```bash
+STATE1:
+  SBI PORTD, 5 ; menyalakan led pertama
+  SBI PORTD, 4 ; menyalakan led kedua
+  SBI PORTD, 3 ; menyalakan buzzer pertama
+  CBI PORTD, 2 ; mematikan buzzer kedua
+  RJMP agn
 ```
 
 
-### KONDISI SAAT MOBIL BERJARAK > 20 CM DARI DINDING
+### KONDISI SAAT MOBIL BERJARAK > 10 CM DARI DINDING
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/MOBIL%20BERJARAK%20LEBIH%20DARI%2020%20CM%20DARI%20DINDING.png)
 
 Saat sensor mendeteksi bahwa mobil masih berjarak > 30 cm dari dinding maka yang akan dilakukan adalah salah satu buzzer akan bersuara dan kedua LED akan menyala. Seperti yang terlihat pada simulasi Proteus berikut.
 
 
-### KONDISI SAAT MOBIL BERJARAK < 20 CM DARI DINDING
+### KONDISI SAAT MOBIL BERJARAK < 10 CM DARI DINDING
 ![](https://github.com/AbrisamYuhartono/Car-Parking-Sensor_SSF_Kelompok-23/blob/main/IMAGE/MOBIL%20BERJARAK%20KURANG%20DARI%2030%20CM%20DARI%20DINDING.png)
 
 Saat sensor mendeteksi bahwa mobil sudah berjarak < 30 cm dari dinding maka yang akan dilakukan adalah kedua buzzer akan bersuara dan salah satu dari LED akan menyala. Seperti yang terlihat pada simulasi Proteus berikut.
