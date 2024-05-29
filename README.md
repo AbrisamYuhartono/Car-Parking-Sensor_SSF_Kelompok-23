@@ -11,8 +11,8 @@
 ## TABLE OF CONTENTS
 - [INTRODUCTION](#introduction)
 - [HARDWARE DESIGN AND IMPLEMENTATION](#hardware-design-and-implementation)
-- [TEST RESULTS AND PERFORMANCE EVALUATION](#test-results-and-performance-evaluation)
 - [SOFTWARE IMPLEMENTATION](#software-implementation)
+- [TEST RESULTS AND PERFORMANCE EVALUATION](#test-results-and-performance-evaluation)
 - [CONCLUSION AND FUTURE WORK](#conclusion-and-future-work)
 
 
